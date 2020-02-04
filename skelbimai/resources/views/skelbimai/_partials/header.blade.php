@@ -13,29 +13,25 @@
     <div class="row align-items-center">
 
         <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">DirectoryAds</a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">Skelbimai24</a></h1>
         </div>
         <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
                 <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="listings.html">Ads</a></li>
+                    <li class="active"><a href="index.html">Pagrindinis</a></li>
+                    <li><a href="listings.html">Skelbimai</a></li>
                     <li class="has-children">
-                        <a href="about.html">About</a>
+                        <a href="about.html">Apie</a>
                         <ul class="dropdown">
-                            <li><a href="#">The Company</a></li>
-                            <li><a href="#">The Leadership</a></li>
-                            <li><a href="#">Philosophy</a></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Projekto informacija</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li class="mr-5"><a href="contact.html">Contact</a></li>
+                    <li class="mr-5"><a href="contact.html">Kontaktai</a></li>
 
-                    <li class="ml-xl-3 login"><a href="login.html"><span class="border-left pl-xl-4"></span>Log In</a></li>
+                    <li class="ml-xl-3 login"><a href="login.html"><span class="border-left pl-xl-4"></span>Prisijungti</a></li>
 
-                    <li><a href="register.html" class="cta"><span class="bg-primary text-white rounded">Register</span></a></li>
+                    <li><a href="register.html" class="cta"><span class="bg-primary text-white rounded">Registruotis</span></a></li>
                 </ul>
             </nav>
         </div>
