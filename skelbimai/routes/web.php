@@ -13,5 +13,6 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('/profile', 'HomeController@profile');
+Route::get('/laravel', 'HomeController@welcome');
 
 
