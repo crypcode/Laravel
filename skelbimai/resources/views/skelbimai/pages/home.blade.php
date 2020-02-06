@@ -10,7 +10,7 @@
                     <div class="row justify-content-center mb-4">
                         <div class="col-md-8 text-center">
                             <h1 class="" data-aos="fade-up">Sveiki atvykę į Skelbimai24</h1>
-                            <p data-aos="fade-up" data-aos-delay="100">Šūkis bus čia. </p>
+                            <p data-aos="fade-up" data-aos-delay="100">Nemokami skelbimai visada </p>
                         </div>
                     </div>
 
