@@ -18,10 +18,22 @@ class HomeController extends Controller
         ];
         return view('test', compact("darbuotojai"));
     }
-    public function home(){
-        return view('home');
+    public function skelbimai(){
+        return view('skelbimai.pages.skelbimai');
     }
-    public function welcome(){
-        return view('welcome');
+    public function skelbimas(){
+        return view('skelbimai.pages.skelbimas');
+    }
+    public function apie(){
+        return view('skelbimai.pages.apie');
+    }
+    public function kontaktai(){
+        return view('skelbimai.pages.kontaktai');
+    }
+    public function prisijungti(){
+        return view('skelbimai.pages.prisijungti');
+    }
+    public function registracija(){
+        return view('skelbimai.pages.registracija');
     }
 }

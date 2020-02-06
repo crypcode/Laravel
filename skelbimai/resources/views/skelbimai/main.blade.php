@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="{{ mix('css/style.css') }}">
     <link rel="stylesheet" href="{{ mix('css/vendor.css') }}">
 
-
 </head>
 
 
@@ -18,6 +17,7 @@
 <body>
 <div class="site-wrap">
 {{--@include('skelbimai/_partials/nav')--}}
+@include('skelbimai/_partials/admin')
 @include('skelbimai/_partials/header')
 @yield('content')
 @include('skelbimai/_partials/footer')

@@ -12,7 +12,11 @@
 */
 
 Route::get('/', 'HomeController@index');
-Route::get('/profile', 'HomeController@profile');
-Route::get('/laravel', 'HomeController@welcome');
+Route::get('/skelbimai', 'HomeController@skelbimai');
+Route::get('/skelbimas', 'HomeController@skelbimas');
+Route::get('/apie', 'HomeController@apie');
+Route::get('/kontaktai', 'HomeController@kontaktai');
+Route::get('/prisijungti', 'HomeController@prisijungti');
+Route::get('/registracija', 'HomeController@registracija');
 
 
