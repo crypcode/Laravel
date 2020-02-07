@@ -22,5 +22,8 @@ Route::get('/pridetikategorija', 'CategoriesController@addcategory');
 Route::get('/pridetiskelbima', 'SkelbimaiController@addad');
 Route::post('/storecategory', 'CategoriesController@storeCategory');
 Route::get('/categories', 'CategoriesController@categories');
+Route::get('/delete/category/{category}', 'CategoriesController@deleteCategory');
+Route::post('/storead', 'SkelbimaiController@storeAd');
+Route::get('/ads', 'SkelbimaiController@ads');
 
 

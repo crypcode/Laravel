@@ -27,17 +27,28 @@
                 <div class="col-md-7 mb-5"  data-aos="fade">
 
                     <h2 class="mb-5 text-black">Prideti skelbima</h2>
-             @if ($errors->any())
-                 <div class="alert alert-danger">
-                     <ul>
-                         @foreach($errors->all as $error)
-                             <li>{{ $error }}</li>
-                         @endforeach
-                     </ul>
-                 </div>
-             @endif
-                    <form method="post" action="/store-ad" class="p-5 bg-white">
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    <form method="post" action="/storead" class="p-5 bg-white">
                          @csrf
+                        <div class="row form-group">
+
+                            <div class="col-md-12">
+                                <label class="text-black" for="kategorija">Kategorija</label>
+                                <select class="form-control" id="kategorija" name="kategorija">
+                                    @foreach($categories as $category)
+                                    <option value="{{ $category->id }}">{{ $category->pavadinimas }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
                         <div class="row form-group">
 
                             <div class="col-md-12">
@@ -48,8 +59,8 @@
 
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="text-black" for="subject">Aprasymas</label>
-                                <input type="text" id="subject" name="aprasymas" class="form-control">
+                                <label class="text-black" for="aprasymas">Aprasymas</label>
+                                <input type="text" id="aprasymas" name="aprasymas" class="form-control">
                             </div>
                         </div>
 
@@ -60,27 +71,31 @@
                             </div>
                         </div>
 
-
-                        <div class="row form-group">
-                            <div class="col-md-12">
-                                <input type="submit" value="prideti" class="btn btn-primary py-2 px-4 text-white">
-                            </div>
-                        </div>
-
                         <div class="row form-group">
                             <div class="col-md-12">
                                 <label class="text-black" for="mail">El. pastas</label>
-                                <input type="email" id="mail" name="mail" class="form-control">
+                                <input type="email" id="email" name="email" class="form-control">
                             </div>
                         </div>
 
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="text-black" for="mail">Telefonas</label>
-                                <input type="phone" id="phone" name="phone" class="form-control">
+                                <label class="text-black" for="phone">Telefonas</label>
+                                <input type="text" id="phone" name="phone" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label class="text-black" for="vieta">Vieta</label>
+                                <input type="text" id="vieta" name="vieta" class="form-control">
                             </div>
                         </div>
 
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <input type="submit" value="Prideti" class="btn btn-primary py-2 px-4 text-white">
+                            </div>
+                        </div>
 
                     </form>
                 </div>

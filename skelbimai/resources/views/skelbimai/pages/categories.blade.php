@@ -30,11 +30,11 @@
                     <th scope="col">Veiksmai</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody align="center">
                 @foreach($categories as $category)
                 <tr>
                     <td>{{$category->pavadinimas}}</td>
-                    <td><a href="#">Salinti</a></td>
+                    <td><a href="delete/category/{{ $category->id }}" class="btn btn-danger">Salinti</a></td>
                 </tr>
                 @endforeach
             </tbody>

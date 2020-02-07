@@ -19,7 +19,8 @@ class CategoriesController extends Controller
     public function storeCategory(Request $request)
     {
         $validatedData = $request->validate([
-            'pavadinimas' => 'required'
+            'pavadinimas' => 'required',
+
         ]);
         $category = Category::create([
            'pavadinimas' => request('pavadinimas') // pavadinimas db laukelis, o key input name
@@ -32,5 +33,10 @@ class CategoriesController extends Controller
     {
         $categories = Category::all();
         return view('skelbimai.pages.categories', compact('categories'));
+    }
+    public function deleteCategory(Category $category) // pirmas modulis, o antras parametras
+    {
+        $category->delete();
+        return redirect('/categories');
     }
 }

@@ -7,7 +7,7 @@
 
                 <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
                     <li class="active"><a href="/pridetikategorija">Prideti kategorija</a></li>
-                    <li><a href="/skelbimai">Skelbimai</a></li>
+                    <li><a href="/pridetiskelbima">Prideti skelbima</a></li>
                     <li class="has-children">
                         <a href="#">Apie</a>
                         <ul class="dropdown">
