@@ -18,5 +18,9 @@ Route::get('/apie', 'HomeController@apie');
 Route::get('/kontaktai', 'HomeController@kontaktai');
 Route::get('/prisijungti', 'HomeController@prisijungti');
 Route::get('/registracija', 'HomeController@registracija');
+Route::get('/pridetikategorija', 'CategoriesController@addcategory');
+Route::get('/pridetiskelbima', 'SkelbimaiController@addad');
+Route::post('/storecategory', 'CategoriesController@storeCategory');
+Route::get('/categories', 'CategoriesController@categories');
 
 
