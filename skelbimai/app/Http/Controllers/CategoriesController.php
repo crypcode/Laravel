@@ -30,6 +30,7 @@ class CategoriesController extends Controller
     }
     public function categories()
     {
-        return view('skelbimai.pages.categories');
+        $categories = Category::all();
+        return view('skelbimai.pages.categories', compact('categories'));
     }
 }

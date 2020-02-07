@@ -27,12 +27,16 @@
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">Kategorijos</th>
+                    <th scope="col">Veiksmai</th>
                 </tr>
             </thead>
             <tbody>
+                @foreach($categories as $category)
                 <tr>
-                    <td>Elektronika</td>
+                    <td>{{$category->pavadinimas}}</td>
+                    <td><a href="#">Salinti</a></td>
                 </tr>
+                @endforeach
             </tbody>
     </table>
         <div class="d-flex justify-content-center">
