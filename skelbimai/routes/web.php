@@ -13,7 +13,7 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('/skelbimai', 'HomeController@skelbimai');
-Route::get('/skelbimas', 'HomeController@skelbimas');
+Route::get('/skelbimas/{ad}', 'HomeController@skelbimas');
 Route::get('/apie', 'HomeController@apie');
 Route::get('/kontaktai', 'HomeController@kontaktai');
 Route::get('/prisijungti', 'HomeController@prisijungti');

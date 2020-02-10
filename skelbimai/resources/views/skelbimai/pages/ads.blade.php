@@ -47,9 +47,8 @@
                             <td>{{$ad->email}}</td>
                             <td>{{$ad->phone}}</td>
                             <td>{{$ad->location}}</td>
-                            @foreach($category as $categories)
-                            <td>{{$categories->pavadinimas}}</td>
-                            @endforeach
+                            <td>{{$ad->category}}</td>
+
                         </tr>
                     @endforeach
                     </tbody>
