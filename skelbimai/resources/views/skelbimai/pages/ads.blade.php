@@ -22,7 +22,7 @@
     <br>
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 offset-3">
+            <div class="col-sm-6">
                 <table class="table">
                     <thead class="thead-dark">
                     <tr>
@@ -33,8 +33,8 @@
                         <th scope="col">El.pastas</th>
                         <th scope="col">Telefonas</th>
                         <th scope="col">Vieta</th>
-                        <th scope="col">Kategorija</th>
-
+                        <th scope="col">Koreguoti</th>
+                        <th scope="col">Trinti</th>
                     </tr>
                     </thead>
                     <tbody align="center">
@@ -47,8 +47,8 @@
                             <td>{{$ad->email}}</td>
                             <td>{{$ad->phone}}</td>
                             <td>{{$ad->location}}</td>
-                            <td>{{$ad->category}}</td>
-
+                            <td><a href="/addata/{{$ad->id}}" class="btn btn-warning">Koreguoti</a></td>
+                            <td><a href="/addelete/{{$ad->id}}" class="btn btn-danger">Salinti</a></td>
                         </tr>
                     @endforeach
                     </tbody>

@@ -39,10 +39,36 @@ class SkelbimaiController extends Controller
     }
     public function ads()
     {
-//        $ads = Ad::all();
-//        $category = Category::all();
-        $ads = Ad::select('ads.id', 'ads.pavadinimas', 'ads.aprasymas','ads.price','ads.email', 'ads.phone', 'ads.location', 'categories.pavadinimas as category'  )->join('categories', 'categories.id', "=",'ads.catid' );
-        return view('skelbimai.pages.ads', compact('ads'));
+        $ads = Ad::all();
+        $category = Category::all();
+        return view('skelbimai.pages.ads', compact('ads'),compact('category'));
+    }
+    public function adDelete(Ad $ad)
+    {
+        $ad->delete();
+        return redirect('/ads');
+    }
+    public function adData(Ad $ad)   {
+
+        return view('skelbimai.pages.addata', compact('ad'));
+    }
+    public function adUpdate(Request $request){
+        $validatedData = $request->validate([
+            'pavadinimas' => 'required',
+            'aprasymas' => 'required',
+            'kaina' => 'required',
+            'email' => 'required',
+            'vieta' => 'required',
+        ]);
+        Ad::where ('id', request('id'))->
+        update(['pavadinimas' => request('pavadinimas'),
+                'aprasymas' => request('aprasymas'),
+                'price' => request('kaina'),
+                'email' => request('email'),
+                'phone' => request('phone'),
+                'location' => request('vieta'),
+        ]);
+        return redirect('/ads');
     }
 }
 

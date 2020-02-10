@@ -25,5 +25,7 @@ Route::get('/categories', 'CategoriesController@categories');
 Route::get('/delete/category/{category}', 'CategoriesController@deleteCategory');
 Route::post('/storead', 'SkelbimaiController@storeAd');
 Route::get('/ads', 'SkelbimaiController@ads');
-
+Route::get('/addelete/{ad}', 'SkelbimaiController@adDelete');
+Route::get('/addata/{ad}', 'SkelbimaiController@adData');
+Route::post('/adupdate/{ad}', 'SkelbimaiController@adUpdate');
 
