@@ -37,7 +37,7 @@
                         </div>
                     @endif
 
-                    <form method="post" action="/adupdate/{{ $ad->id }}" class="p-5 bg-white">
+                    <form method="post" action="/adupdate/{{ $ad->id }}" enctype="multipart/form-data" class="p-5 bg-white">
                         @csrf
                         <input name="id" type="hidden" value="{{ $ad->id }}">
                         <div class="row form-group">
@@ -66,8 +66,9 @@
                         </div>
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="text-black" for="nuotraukos">IMG</label>
-                                <input type="file" name="nuotraukos" id="nuotraukos" class="form-control">
+                                <label class="text-black" for="nuotrauka">Nuotrauka</label>
+                                <input type="file" name="nuotrauka" id="nuotrauka" class="form-control">
+                                <img src="{{asset('storage/'.$ad->nuotrauka)}}">
                             </div>
                         </div>
                         <div class="row form-group">

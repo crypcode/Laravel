@@ -8,12 +8,7 @@
                 <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
                     <li class="active"><a href="/pridetikategorija">Prideti kategorija</a></li>
                     <li><a href="/pridetiskelbima">Prideti skelbima</a></li>
-                    <li class="has-children">
-                        <a href="#">Apie</a>
-                        <ul class="dropdown">
-                            <li><a href="/apie">Projekto informacija</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="/ads">Skelbimu administravimas</a></li>
                     <li class="mr-5"><a href="/kontaktai">Kontaktai</a></li>
 
                 </ul>

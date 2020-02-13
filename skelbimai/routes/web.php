@@ -28,4 +28,5 @@ Route::get('/ads', 'SkelbimaiController@ads');
 Route::get('/addelete/{ad}', 'SkelbimaiController@adDelete');
 Route::get('/addata/{ad}', 'SkelbimaiController@adData');
 Route::post('/adupdate/{ad}', 'SkelbimaiController@adUpdate');
+Route::get('/search/', 'HomeController@searchAction');
 

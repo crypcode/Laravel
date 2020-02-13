@@ -17,8 +17,8 @@
 <body>
 <div class="site-wrap">
 {{--@include('skelbimai/_partials/nav')--}}
-@include('skelbimai/_partials/admin')
 @include('skelbimai/_partials/header')
+@include('skelbimai/_partials/admin')
 @yield('content')
 @include('skelbimai/_partials/footer')
 </div>
